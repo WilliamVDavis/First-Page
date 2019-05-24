@@ -1,6 +1,20 @@
-.square {
+.jack {
     height: 150px;
     width: 150px;
     font-size:75px;
     text-align: center;
 }
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+  td:nth-of-type(2) {
+    border-top-color: transparent;
+  }
+  td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+  }

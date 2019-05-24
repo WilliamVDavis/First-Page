@@ -1,4 +1,8 @@
-function myFunction() {
-    document.getElementById("field2").value = document.getElementById("field1").value;
-  }
- 
+const jacks = document.querySelectorAll(".jack")
+
+jacks.forEach(function(jack) {
+  jack.addEventListener("click", function(d) {
+    jack.innerHTML = "X";
+  })
+});
+
