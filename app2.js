@@ -7,6 +7,18 @@ jacks.forEach(function(jack) { // For the array jacks it's saying where there is
 jacks.forEach(function() {
     jack.addEventListener("click", function(d) {
       jack.innerHTML = "O";
+
+      jacks.forEach(function(O) {
+        jack.addEventListener("click", function(d) {
+          jack.innerHTML = "X";
+
+          jacks.forEach(function(X) {
+            jack.addEventListener("click", function(d) {
+              jack.innerHTML = "O";
+            })
+          });   
+        })
+      });
     })
   });
 })
